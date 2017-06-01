@@ -1,7 +1,7 @@
 const path = require("path");
 
 module.exports = {
-    entry: ["whatwg-fetch", "./js/portfolio.jsx"],
+    entry: ["whatwg-fetch", "./js/musicbox.jsx"],
     output: {
         path: path.resolve("js"),
         filename: "out.js"

@@ -1,5 +1,43 @@
 .mixer{
     height: 200px;
     width: auto;
-    border: solid red
+    border: solid red;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.vinyl{
+    border: solid black;
+    border-radius: 100px;
+    width: 150px;
+    height: 150px;
+}
+
+.vinyl-settings{
+    // border: solid yellow;
+    width: 140px;
+}
+
+.vinyl-box-left{
+    // border: solid blue;
+    height: 160px;
+}
+
+.vinyl-box-right{
+    // border: solid blue;
+    height: 160px;
+}
+
+.vinyl-section{
+    // border: solid orange;
+    display: flex;
+    justify-content: space-around;
+}
+
+.scroll-section{
+    // border: solid green;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
 }

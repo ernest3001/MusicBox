@@ -12948,7 +12948,19 @@ var Mixer = function (_React$Component7) {
             return _react2.default.createElement(
                 'div',
                 { className: 'mixer' },
-                _react2.default.createElement(ScrollBar, null)
+                _react2.default.createElement(
+                    'div',
+                    { className: 'vinyl-section' },
+                    _react2.default.createElement(VinylLeft, null),
+                    _react2.default.createElement(VinylRight, null)
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'scroll-section' },
+                    _react2.default.createElement(ScrollBar, null),
+                    _react2.default.createElement(ScrollBar, null),
+                    _react2.default.createElement(ScrollBar, null)
+                )
             );
         }
     }]);
@@ -12956,8 +12968,62 @@ var Mixer = function (_React$Component7) {
     return Mixer;
 }(_react2.default.Component);
 
-var ScrollBar = function (_React$Component8) {
-    _inherits(ScrollBar, _React$Component8);
+var VinylLeft = function (_React$Component8) {
+    _inherits(VinylLeft, _React$Component8);
+
+    function VinylLeft() {
+        _classCallCheck(this, VinylLeft);
+
+        return _possibleConstructorReturn(this, (VinylLeft.__proto__ || Object.getPrototypeOf(VinylLeft)).apply(this, arguments));
+    }
+
+    _createClass(VinylLeft, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                { className: 'vinyl-box-left' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'vinyl' },
+                    _react2.default.createElement('div', { className: 'vinyl-inside' })
+                )
+            );
+        }
+    }]);
+
+    return VinylLeft;
+}(_react2.default.Component);
+
+var VinylRight = function (_React$Component9) {
+    _inherits(VinylRight, _React$Component9);
+
+    function VinylRight() {
+        _classCallCheck(this, VinylRight);
+
+        return _possibleConstructorReturn(this, (VinylRight.__proto__ || Object.getPrototypeOf(VinylRight)).apply(this, arguments));
+    }
+
+    _createClass(VinylRight, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                { className: 'vinyl-box-right' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'vinyl' },
+                    _react2.default.createElement('div', { className: 'vinyl-inside' })
+                )
+            );
+        }
+    }]);
+
+    return VinylRight;
+}(_react2.default.Component);
+
+var ScrollBar = function (_React$Component10) {
+    _inherits(ScrollBar, _React$Component10);
 
     function ScrollBar() {
         _classCallCheck(this, ScrollBar);
@@ -12970,7 +13036,7 @@ var ScrollBar = function (_React$Component8) {
         value: function render() {
             return _react2.default.createElement(
                 'div',
-                null,
+                { className: 'vinyl-settings' },
                 _react2.default.createElement('input', { type: 'range', min: '0', max: '50' })
             );
         }

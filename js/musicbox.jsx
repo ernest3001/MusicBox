@@ -197,7 +197,39 @@ class Mixer extends React.Component{
     render() {
         return (
             <div className="mixer">
+                <div className="vinyl-section">
+                <VinylLeft/>
+                <VinylRight/>
+                </div>
+                <div className="scroll-section">
                 <ScrollBar/>
+                <ScrollBar/>
+                <ScrollBar/>
+                </div>
+            </div>
+        );
+    }
+}
+
+class VinylLeft extends React.Component{
+    render() {
+        return (
+            <div className="vinyl-box-left">
+            <div className="vinyl">
+                <div className="vinyl-inside"></div>
+            </div>
+            </div>
+        );
+    }
+}
+
+class VinylRight extends React.Component{
+    render() {
+        return (
+            <div className="vinyl-box-right">
+            <div className="vinyl">
+                <div className="vinyl-inside"></div>
+            </div>
             </div>
         );
     }
@@ -207,7 +239,7 @@ class ScrollBar extends React.Component{
     render() {
         return (
 
-            <div>
+            <div className="vinyl-settings">
                 <input type="range" min="0" max="50" />
             </div>
         );
