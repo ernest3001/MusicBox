@@ -12985,7 +12985,7 @@ var VinylLeft = function (_React$Component8) {
                 { className: 'vinyl-box-left' },
                 _react2.default.createElement(
                     'div',
-                    { className: 'vinyl' },
+                    { className: 'vinyl-left' },
                     _react2.default.createElement('div', { className: 'vinyl-inside' })
                 )
             );
@@ -13012,7 +13012,7 @@ var VinylRight = function (_React$Component9) {
                 { className: 'vinyl-box-right' },
                 _react2.default.createElement(
                     'div',
-                    { className: 'vinyl' },
+                    { className: 'vinyl-right' },
                     _react2.default.createElement('div', { className: 'vinyl-inside' })
                 )
             );

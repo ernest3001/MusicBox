@@ -215,7 +215,7 @@ class VinylLeft extends React.Component{
     render() {
         return (
             <div className="vinyl-box-left">
-            <div className="vinyl">
+            <div className="vinyl-left">
                 <div className="vinyl-inside"></div>
             </div>
             </div>
@@ -227,7 +227,7 @@ class VinylRight extends React.Component{
     render() {
         return (
             <div className="vinyl-box-right">
-            <div className="vinyl">
+            <div className="vinyl-right">
                 <div className="vinyl-inside"></div>
             </div>
             </div>
