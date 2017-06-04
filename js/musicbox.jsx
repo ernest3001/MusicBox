@@ -81,6 +81,16 @@ class Icons extends React.Component {
                     let b = document.getElementById("B");
                     b.load();
                     b.play();
+                },
+                function C(){
+                    let c = document.getElementById("C");
+                    c.load();
+                    c.play();
+                },
+                function D(){
+                    let d = document.getElementById("D");
+                    d.load();
+                    d.play();
                 }
 
             ]
@@ -412,7 +422,73 @@ class Recorder extends React.Component{
     render() {
         return (
             <div className="recorder">
+                <RecordSound/>
+                <PlaySound/>
+                <PauseSound/>
+                <StopSound/>
+                <PianoSound/>
+                <MicSound/>
             </div>
+        );
+    }
+}
+class PlaySound extends React.Component{
+    constructor(props){
+        super(props)
+    }
+    render() {
+        return (
+            <div className="play-sound-button"></div>
+        );
+    }
+}
+class RecordSound extends React.Component{
+    constructor(props){
+        super(props)
+    }
+    render() {
+        return (
+            <div className="record-sound-button"></div>
+        );
+    }
+}
+class PauseSound extends React.Component{
+    constructor(props){
+        super(props)
+    }
+    render() {
+        return (
+            <div className="pause-sound-button"></div>
+        );
+    }
+}
+class StopSound extends React.Component{
+    constructor(props){
+        super(props)
+    }
+    render() {
+        return (
+            <div className="stop-sound-button"></div>
+        );
+    }
+}
+class PianoSound extends React.Component{
+    constructor(props){
+        super(props)
+    }
+    render() {
+        return (
+            <div className="piano-sound-button"></div>
+        );
+    }
+}
+class MicSound extends React.Component{
+    constructor(props){
+        super(props)
+    }
+    render() {
+        return (
+            <div className="mic-sound-button"></div>
         );
     }
 }

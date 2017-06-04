@@ -12716,6 +12716,14 @@ var Icons = function (_React$Component4) {
                 var b = document.getElementById("B");
                 b.load();
                 b.play();
+            }, function C() {
+                var c = document.getElementById("C");
+                c.load();
+                c.play();
+            }, function D() {
+                var d = document.getElementById("D");
+                d.load();
+                d.play();
             }];
             tab.map(function (e, i) {
                 mojElement = _react2.default.createElement(
@@ -13176,11 +13184,134 @@ var Recorder = function (_React$Component13) {
     _createClass(Recorder, [{
         key: 'render',
         value: function render() {
-            return _react2.default.createElement('div', { className: 'recorder' });
+            return _react2.default.createElement(
+                'div',
+                { className: 'recorder' },
+                _react2.default.createElement(RecordSound, null),
+                _react2.default.createElement(PlaySound, null),
+                _react2.default.createElement(PauseSound, null),
+                _react2.default.createElement(StopSound, null),
+                _react2.default.createElement(PianoSound, null),
+                _react2.default.createElement(MicSound, null)
+            );
         }
     }]);
 
     return Recorder;
+}(_react2.default.Component);
+
+var PlaySound = function (_React$Component14) {
+    _inherits(PlaySound, _React$Component14);
+
+    function PlaySound(props) {
+        _classCallCheck(this, PlaySound);
+
+        return _possibleConstructorReturn(this, (PlaySound.__proto__ || Object.getPrototypeOf(PlaySound)).call(this, props));
+    }
+
+    _createClass(PlaySound, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement('div', { className: 'play-sound-button' });
+        }
+    }]);
+
+    return PlaySound;
+}(_react2.default.Component);
+
+var RecordSound = function (_React$Component15) {
+    _inherits(RecordSound, _React$Component15);
+
+    function RecordSound(props) {
+        _classCallCheck(this, RecordSound);
+
+        return _possibleConstructorReturn(this, (RecordSound.__proto__ || Object.getPrototypeOf(RecordSound)).call(this, props));
+    }
+
+    _createClass(RecordSound, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement('div', { className: 'record-sound-button' });
+        }
+    }]);
+
+    return RecordSound;
+}(_react2.default.Component);
+
+var PauseSound = function (_React$Component16) {
+    _inherits(PauseSound, _React$Component16);
+
+    function PauseSound(props) {
+        _classCallCheck(this, PauseSound);
+
+        return _possibleConstructorReturn(this, (PauseSound.__proto__ || Object.getPrototypeOf(PauseSound)).call(this, props));
+    }
+
+    _createClass(PauseSound, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement('div', { className: 'pause-sound-button' });
+        }
+    }]);
+
+    return PauseSound;
+}(_react2.default.Component);
+
+var StopSound = function (_React$Component17) {
+    _inherits(StopSound, _React$Component17);
+
+    function StopSound(props) {
+        _classCallCheck(this, StopSound);
+
+        return _possibleConstructorReturn(this, (StopSound.__proto__ || Object.getPrototypeOf(StopSound)).call(this, props));
+    }
+
+    _createClass(StopSound, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement('div', { className: 'stop-sound-button' });
+        }
+    }]);
+
+    return StopSound;
+}(_react2.default.Component);
+
+var PianoSound = function (_React$Component18) {
+    _inherits(PianoSound, _React$Component18);
+
+    function PianoSound(props) {
+        _classCallCheck(this, PianoSound);
+
+        return _possibleConstructorReturn(this, (PianoSound.__proto__ || Object.getPrototypeOf(PianoSound)).call(this, props));
+    }
+
+    _createClass(PianoSound, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement('div', { className: 'piano-sound-button' });
+        }
+    }]);
+
+    return PianoSound;
+}(_react2.default.Component);
+
+var MicSound = function (_React$Component19) {
+    _inherits(MicSound, _React$Component19);
+
+    function MicSound(props) {
+        _classCallCheck(this, MicSound);
+
+        return _possibleConstructorReturn(this, (MicSound.__proto__ || Object.getPrototypeOf(MicSound)).call(this, props));
+    }
+
+    _createClass(MicSound, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement('div', { className: 'mic-sound-button' });
+        }
+    }]);
+
+    return MicSound;
 }(_react2.default.Component);
 
 document.addEventListener('DOMContentLoaded', function () {
